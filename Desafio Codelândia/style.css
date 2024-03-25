@@ -48,8 +48,7 @@ main {
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 100%;
-    /* max-width: 1216px; */
+    width: calc(100% - 64px);
     padding: 64px 32px;
     color: white;
 }
@@ -57,9 +56,44 @@ article {
     width: 100%;
     max-width: 1216px;
     background-color: #17171A;
-    border: 2px solid #E07B67;
+    border: 2px solid #252529;
     border-radius: 8px;
     padding: 40px;
     margin-bottom: 40px;
     width: calc(100% - 40px);
+}
+article:hover {
+    border: 2px solid #E07B67;
+}
+.article_date {
+    color:#E07B67;
+    font-size: 16px;
+    font-weight: 500px;
+}
+.article_title {
+    font-size: 24px;
+    font-weight: 500px;
+    margin: 4px 0px;
+}
+.article_text {
+    color: #AFABB6;
+    font-size: 20px;
+}
+.article_dateHeart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#heart_icon {
+    fill:#17171A;
+    stroke: #E07B67;
+    stroke-width: 7;
+    transition: fill 0.3s;
+    cursor: pointer;
+}
+
+#heart_icon.filled,
+#heart_icon:hover{
+    fill: #E07B67;
 }
