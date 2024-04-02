@@ -1,0 +1,16 @@
+@font-face {
+    font-family: archivo;
+    src: url(Font/archivo.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+.topo {
+    text-align: center;
+}
+.topo_text {
+    font-family: archivo;
+    font-weight: 500;
+}
